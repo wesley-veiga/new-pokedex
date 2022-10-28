@@ -9,7 +9,7 @@ export const LoadingContainer = styled.View`
 export const ScrollView = styled.ScrollView`
   height: 100%;
   padding: 0px 30px 0px 30px;
-  margin-bottom: 2;
+  margin-bottom: 2px;
 `;
 
 export const PokemonName = styled.Text`
@@ -17,7 +17,7 @@ export const PokemonName = styled.Text`
 `;
 
 export const PokemonInfoTitle = styled.Text`
-  font-size: 30;
+  font-size: 30px;
   margin: 20px 0px 10px 0px;
 `;
 
@@ -30,7 +30,7 @@ export const Image = styled.Image`
   margin: 0px 5px 0px 5px;
   border-radius: 7px;
   background-color: #fff;
-  object-fit: "contain";
+  object-fit: contain;
 `;
 
 export const InfoText = styled.Text`
