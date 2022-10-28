@@ -91,7 +91,7 @@ export const reducer = (state = INITIAL_STATE, action: Action) => {
           ),
         ],
       };
-    case Types.REMOVE_POKEMON:
+    case Types.CLEAR_POKEMONS:
       return {
         ...state,
         list_pokemons: [],
