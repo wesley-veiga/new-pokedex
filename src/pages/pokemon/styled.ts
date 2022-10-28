@@ -1,5 +1,9 @@
 import styled from "styled-components/native";
 
+type Props = {
+  number: number;
+};
+
 export const LoadingContainer = styled.View`
   flex: 1;
   justify-content: center;
@@ -68,7 +72,7 @@ export const PokedexInfoContainer = styled.View`
 `;
 
 export const PokedexNumberText = styled.Text`
-  font-size: ${(props) => (props.number === 0 ? 15 : 30)}px;
+  font-size: ${(props: Props) => (props.number === 0 ? 15 : 30)}px;
   color: white;
 `;
 

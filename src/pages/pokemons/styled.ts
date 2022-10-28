@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/native";
 
 export const TouchableOpacity = styled.TouchableOpacity`
   border-bottom-width: 0.5px;

@@ -1,9 +1,14 @@
 import styled from "styled-components/native";
 
+type Props = {
+  backgroundColor: string;
+  color: string;
+};
+
 export const StyledButton = styled.TouchableOpacity`
   width: 80%;
   height: 70px;
-  background-color: ${(props) =>
+  background-color: ${(props: Props) =>
     props.backgroundColor ? props.backgroundColor : "green"};
   justify-content: center;
   border-radius: 7px;
@@ -15,6 +20,6 @@ export const StyledButton = styled.TouchableOpacity`
 export const StyledTitle = styled.Text`
   font-weight: 400;
   font-size: 25rem;
-  color: ${(props) => (props.color ? props.color : "#FFF")};
+  color: ${(props: Props) => (props.color ? props.color : "#FFF")};
   text-align: center;
 `;
