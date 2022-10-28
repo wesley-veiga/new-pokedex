@@ -83,17 +83,19 @@ const Pokemons = () => {
   );
 
   const renderEmptyData = () => {
-    return (
-      <View>
-        <Text>
-          Hmm...{"\n"}
-          {"\n"}
-          Parece que não tem nenhum pokémon por aqui! {"\n"}
-          {"\n"}Puxe para atualizar.
-        </Text>
-        <Image source={require("../../Assets/loadError.png")} />
-      </View>
-    );
+    if (allPokemons.data.length == 0 && allPokemons.loading === false) {
+      return (
+        <View>
+          <Text>
+            Hmm...{"\n"}
+            {"\n"}
+            Parece que não tem nenhum pokémon por aqui! {"\n"}
+            {"\n"}Puxe para atualizar.
+          </Text>
+          <Image source={require("../../Assets/loadError.png")} />
+        </View>
+      );
+    } else return <React.Fragment />;
   };
 
   return (
